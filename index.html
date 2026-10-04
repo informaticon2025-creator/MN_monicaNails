@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#39102d">
+    <link rel="icon" href="icon.png" type="image/png">
+    <meta name="description" content="Mónica Nails: kapping gel, manicure y pedicure semipermanente, sistema JellyTips y nivelación de rubber. Contacto por WhatsApp.">
+    <title>Mónica Nails | Manicure y pedicure</title>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_VE">
+    <meta property="og:title" content="Mónica Nails | Manicure y pedicure">
+    <meta property="og:description" content="Belleza en cada detalle: kapping gel, manicure y pedicure semipermanente, JellyTips y nivelación de rubber. Agenda tu cita con Mónica Nails.">
+    <meta property="og:image" content="ICON.png">
+    <meta property="og:image:alt" content="Logo de Mónica Nails">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mónica Nails | Manicure y pedicure">
+    <meta name="twitter:description" content="Belleza en cada detalle: kapping gel, manicure y pedicure semipermanente, JellyTips y nivelación de rubber. Agenda tu cita con Mónica Nails.">
+    <meta name="twitter:image" content="ICON.png">
+    <meta name="twitter:image:alt" content="Logo de Mónica Nails">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #251321;
+            --ink-soft: #3b1230;
+            --paper: #fff0f8;
+            --white: #fffafd;
+            --orange: #e60078;
+            --orange-dark: #bc0063;
+            --muted: #d8b6cb;
+            --line: #e5c9da;
+            --body-font: "DM Sans", "Segoe UI", sans-serif;
+            --display-font: "Barlow Condensed", Impact, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top, rgba(230, 0, 120, 0.06), transparent 24%),
+                linear-gradient(180deg, #f8f5f6 0%, #f4eef1 100%);
+            font-family: var(--body-font);
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; }
+        a:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+        .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+
+        .topbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            color: var(--white);
+            background: linear-gradient(180deg, rgba(29, 17, 25, 0.96) 0%, rgba(36, 22, 33, 0.96) 100%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 24px rgba(20, 12, 16, 0.08);
+            backdrop-filter: blur(10px);
+        }
+        .nav {
+            display: flex;
+            min-height: 76px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            font-family: var(--display-font);
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .brand-logo { display: block; width: 64px; height: 70px; flex: 0 0 auto; object-fit: contain; mix-blend-mode: screen; }
+        .nav-links { display: flex; align-items: center; gap: 30px; }
+        .nav-links a:not(.nav-cta) {
+            color: #dedfdb;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .nav-links a:not(.nav-cta):hover { color: #ff8bc4; }
+        .nav-cta, .button {
+            display: inline-flex;
+            min-height: 46px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            border: 1px solid rgba(230, 0, 120, 0.85);
+            background: linear-gradient(135deg, #d40070 0%, #ef4d9d 100%);
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 12px 24px rgba(212, 0, 112, 0.17);
+            transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+            position: relative;
+            overflow: hidden;
+            border-radius: 999px;
+            letter-spacing: 0.01em;
+        }
+        .nav-cta::before, .button::before {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.18) 40%, transparent 100%);
+            transform: translateX(-120%);
+            transition: transform 240ms ease;
+            content: "";
+        }
+        .nav-cta:hover, .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 26px rgba(212, 0, 112, 0.2);
+            filter: saturate(1.04);
+        }
+        .nav-cta:hover::before, .button:hover::before { transform: translateX(120%); }
+        .button--outline {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(93, 41, 63, 0.28);
+            color: var(--ink-soft);
+            box-shadow: none;
+        }
+        .button--outline:hover { background: rgba(255,255,255,0.18); border-color: rgba(93, 41, 63, 0.5); }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at 80% 12%, rgba(255, 172, 214, 0.22), transparent 18%),
+                linear-gradient(135deg, #fdf8fa 0%, #f4edf0 38%, #f0e8eb 100%);
+        }
+        .hero::before {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #26191f 0%, rgba(230, 0, 120, 0.9) 50%, #26191f 100%);
+            content: "";
+        }
+        .hero::after {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(52, 32, 42, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(52, 32, 42, 0.02) 1px, transparent 1px);
+            background-size: 42px 42px;
+            content: "";
+            opacity: 0.9;
+        }
+        .hero-inner,
+        .hero-copy,
+        .hero-photos,
+        .hero-heading-row,
+        .hero-actions,
+        .hero-social {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-inner {
+            display: grid;
+            min-height: 560px;
+            grid-template-columns: minmax(0, 1fr);
+            align-items: center;
+            padding-block: 52px 58px;
+        }
+        .hero-heading-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(280px, 350px);
+            align-items: center;
+            gap: clamp(24px, 6vw, 72px);
+        }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 18px;
+            color: #5b3d4d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+        .eyebrow::before { width: 26px; height: 2px; background: var(--orange); content: ""; }
+        h1, h2, h3, p { margin-top: 0; }
+        h1 {
+            max-width: 650px;
+            margin-bottom: 20px;
+            font-family: var(--display-font);
+            font-size: clamp(62px, 6vw, 92px);
+            font-weight: 800;
+            line-height: .86;
+            letter-spacing: -0.06em;
+            text-transform: uppercase;
+            color: #201318;
+            transform-origin: left center;
+            animation: hero-title-reveal 950ms cubic-bezier(.16,1,.3,1) both;
+        }
+        h1 span {
+            display: inline-block;
+            color: var(--orange);
+            background: linear-gradient(105deg, #d40070 8%, #f04d9c 42%, #fff0f8 50%, #f04d9c 58%, #d40070 92%);
+            background-size: 240% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: hero-title-shine 1.25s 650ms ease-out forwards;
+        }
+        .hero-description {
+            max-width: 620px;
+            margin-bottom: 27px;
+            color: #56414d;
+            font-size: 17px;
+            line-height: 1.7;
+            animation: hero-description-reveal 850ms 420ms cubic-bezier(.16,1,.3,1) both;
+        }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+        .hero-social { display: grid; flex-basis: 100%; justify-items: start; gap: 8px; margin-top: 12px; color: #2a1e25; }
+        .hero-social-label { margin: 0; color: #56394a; font: 700 11px var(--body-font); text-transform: uppercase; }
+        .hero-social-icons { display: flex; align-items: center; gap: 12px; }
+        .hero-social-icon { display: block; width: 22px; height: 22px; fill: currentColor; }
+        .hero-social-icon { color: #3b1230; }
+        .hero-note { margin: 18px 0 0; color: #5d4d59; font-size: 13px; }
+        .hero-note strong { color: #251321; font-weight: 600; }
+        .hero-photos {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            aspect-ratio: 1 / 1.12;
+            justify-self: end;
+        }
+        .hero-photo {
+            position: absolute;
+            display: block;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border: 1px solid var(--orange);
+            border-radius: 100%;
+            background-image: url("FLASH.jpg");
+            background-repeat: no-repeat;
+            box-shadow: 0 8px 24px #0006;
+        }
+        .hero-photo--large {
+            top: 0;
+            left: 0;
+            width: 76%;
+            background-size: 283.5% auto;
+            background-position: 24.8% 23.7%;
+        }
+        .hero-photo--medium {
+            right: 0;
+            bottom: 0;
+            width: 58%;
+            background-size: 337.5% auto;
+            background-position: 85.5% 47.3%;
+        }
+        .device-strip {
+            color: var(--white);
+            background: linear-gradient(90deg, #241a20 0%, #331d2d 48%, #26161d 100%);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+        }
+        .device-list {
+            display: grid;
+            width: 100%;
+            min-height: 64px;
+            grid-template-columns: repeat(5, max-content);
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .device-list span {
+            padding: 10px 12px;
+            border-right: 1px solid rgba(255,255,255,0.12);
+            font-family: var(--display-font);
+            font-size: 23px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .device-option {
+            display: flex;
+            min-width: 0;
+            min-height: 38px;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 16px;
+            border: 0;
+            border-right: 1px solid rgba(255,255,255,0.12);
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            font: 700 20px var(--display-font);
+            text-align: center;
+            text-transform: uppercase;
+            transition: background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+            border-radius: 0;
+        }
+        .device-option:hover, .device-option:focus-visible {
+            background: rgba(255,255,255,0.06);
+            transform: translateY(-1px);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+        }
+        .device-option:last-child { border: 0; }
+        .device-option:focus-visible { outline: 2px solid var(--white); outline-offset: -4px; }
+        .device-support-option { display: none; }
+        .device-menu-toggle { display: none; }
+        .device-list[hidden] { display: grid; }
+        .device-menu-close { display: none; }
+        .device-social { display: none; }
+
+        .repairs-dialog {
+            width: min(880px, calc(100vw - 32px));
+            max-width: none;
+            max-height: min(86vh, 760px);
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #4a4e46;
+            background: var(--paper);
+            color: var(--ink);
+            box-shadow: 0 28px 90px #0009;
+        }
+        .repairs-dialog::backdrop { background: #080a08c9; backdrop-filter: blur(4px); }
+        .dialog-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 20px 24px;
+            border-bottom: 1px solid #393d36;
+            background: var(--ink);
+            color: var(--white);
+        }
+        .dialog-kicker { margin: 0 0 4px; color: #bfc1ba; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+        .dialog-header h2 { color: var(--white); font-size: 38px; }
+        .dialog-close {
+            display: grid;
+            width: 44px;
+            height: 44px;
+            flex: 0 0 auto;
+            place-items: center;
+            border: 1px solid #656861;
+            background: transparent;
+            color: var(--orange);
+            cursor: pointer;
+        }
+        .dialog-close:hover { background: #54203f; }
+        .dialog-close .ui-icon { width: 22px; height: 22px; }
+        .gallery-content { max-height: calc(min(86vh, 760px) - 90px); padding: 22px 24px 26px; overflow-y: auto; }
+        .repair-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+        .repair-card { overflow: hidden; border: 1px solid #d0d2cc; background: var(--white); }
+        .repair-image { display: block; width: 100%; max-width: 100%; max-height: min(50vh, 420px); aspect-ratio: 16 / 10; object-fit: contain; object-position: center; background: var(--ink-soft); }
+        .repair-card-copy { padding: 16px 18px 18px; }
+        .repair-category { margin: 0 0 7px; color: var(--orange-dark); font-size: 11px; font-weight: 700; text-transform: uppercase; }
+        .repair-card h3 { margin: 0 0 8px; font-family: var(--display-font); font-size: 26px; line-height: 1; text-transform: uppercase; }
+        .repair-description { margin: 0; color: #555950; font-size: 14px; line-height: 1.55; }
+        .gallery-empty { display: grid; justify-items: center; gap: 14px; max-width: 390px; margin: 0 auto; padding: 12px 0 20px; text-align: center; }
+        .gallery-empty img { width: min(220px, 70%); border: 1px solid var(--orange); }
+        .gallery-empty p { margin: 0; color: #555950; font-size: 14px; line-height: 1.6; }
+
+        .services {
+            padding-block: 100px 108px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(244,236,240,0.8) 100%);
+        }
+        .section-head {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 28px;
+            margin-bottom: 42px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(95, 68, 79, 0.12);
+        }
+        .section-head .eyebrow { margin-bottom: 12px; color: #5b5e57; }
+        h2 {
+            margin-bottom: 0;
+            font-family: var(--display-font);
+            font-size: 58px;
+            font-weight: 800;
+            line-height: .95;
+            text-transform: uppercase;
+        }
+        .section-intro { max-width: 365px; margin: 0 0 3px; color: #62655e; font-size: 15px; line-height: 1.65; }
+        .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgba(76, 46, 55, 0.14); }
+        .service-gallery {
+            flex: 0 0 auto;
+            margin-top: 26px;
+            padding: 22px;
+            overflow: hidden;
+            border: 1px solid rgba(84,32,63,0.12);
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,240,248,0.72));
+            box-shadow: 0 18px 44px rgba(59,18,48,0.08);
+        }
+        .service-gallery-head { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 16px; }
+        .service-gallery-title { margin: 0; color: #54203f; font-family: var(--display-font); font-size: 28px; font-weight: 700; text-transform: uppercase; }
+        .service-gallery-subtitle { margin: 3px 0 0; color: #76616c; font-size: 13px; }
+        .service-gallery-controls { display: flex; gap: 8px; }
+        .service-gallery-control {
+            display: grid;
+            width: 42px;
+            height: 42px;
+            place-items: center;
+            border: 1px solid rgba(84,32,63,0.2);
+            border-radius: 50%;
+            background: #fffafd;
+            color: #54203f;
+            font: 700 22px/1 var(--body-font);
+            cursor: pointer;
+            transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
+        }
+        .service-gallery-control svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+        .service-gallery-control:hover { transform: translateY(-2px); background: #d40070; color: #fffafd; }
+        .service-gallery-control:disabled { opacity: .42; cursor: default; transform: none; }
+        .service-gallery-control:focus-visible { outline: 2px solid #d40070; outline-offset: 3px; }
+        .service-gallery-track {
+            display: grid;
+            grid-auto-columns: minmax(190px, 24%);
+            grid-auto-flow: column;
+            gap: 14px;
+            overflow-x: auto;
+            padding: 2px 2px 12px;
+            scroll-snap-type: none;
+            scrollbar-color: #d40070 #f0dce7;
+            scrollbar-width: thin;
+            overscroll-behavior-inline: contain;
+        }
+        .service-gallery-slide {
+            position: relative;
+            min-width: 0;
+            margin: 0;
+            height: 290px;
+            overflow: hidden;
+            border: 1px solid rgba(84,32,63,0.12);
+            border-radius: 16px;
+            background: #f0dce7;
+            scroll-snap-align: start;
+        }
+        .service-gallery-credit {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 26px 12px 11px;
+            background: linear-gradient(transparent, rgba(30,12,24,0.82));
+            color: #fffafd;
+            font-size: 11px;
+            text-decoration: none;
+        }
+        .service-gallery-credit:hover { text-decoration: underline; }
+        .service-gallery-art { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+        .service-gallery-slide:hover .service-gallery-art { transform: scale(1.04); }
+        .service-item {
+            display: flex;
+            min-height: 94px;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 12px 20px 0;
+            border-bottom: 1px solid rgba(76, 46, 55, 0.14);
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+            border-radius: 12px;
+        }
+        .service-item:hover {
+            background: rgba(255,255,255,0.48);
+            transform: translateX(4px);
+            box-shadow: 0 12px 22px rgba(27, 20, 25, 0.04);
+        }
+        .service-number { color: var(--orange-dark); font-family: var(--display-font); font-size: 19px; font-weight: 700; }
+        .icon-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+        .ui-icon { width: 20px; height: 20px; flex: 0 0 auto; color: var(--orange); fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .service-item:nth-child(3n + 2), .service-item:nth-child(3n) { padding-left: 22px; border-left: 1px solid rgba(76, 46, 55, 0.14); }
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+            color: var(--white);
+            background: linear-gradient(135deg, #24171f 0%, #39222d 48%, #201318 100%);
+        }
+        .contact::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 9px;
+            height: 100%;
+            background: linear-gradient(180deg, #f8bfd8 0%, #d40070 100%);
+            content: "";
+        }
+        .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding-block: 80px; }
+        .contact .eyebrow { color: #c6c8c2; }
+        .contact h2 { max-width: 500px; margin-bottom: 16px; }
+        .contact-copy > p:not(.eyebrow) { max-width: 430px; margin-bottom: 0; color: #c3c5bf; font-size: 15px; line-height: 1.7; }
+        .contact-details { display: flex; flex-wrap: wrap; align-content: center; align-items: center; gap: 12px; }
+        .contact-row {
+            display: grid;
+            grid-template-columns: 100px minmax(0, 1fr);
+            gap: 16px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+        }
+        .contact-label { display: flex; align-items: center; gap: 7px; color: #a8aaa4; font-size: 13px; }
+        .contact-label .ui-icon { width: 17px; height: 17px; }
+        .contact-value { overflow-wrap: anywhere; color: var(--white); font-size: 16px; font-weight: 600; text-decoration-color: #e6007880; text-underline-offset: 4px; }
+        .contact-value:hover { color: #ff8bc4; }
+        .contact-details .button { justify-self: start; margin-top: 4px; }
+        .contact-details .button { gap: 9px; }
+        .contact-button-icon { width: 20px; height: 20px; flex: 0 0 auto; fill: currentColor; }
+        .button--whatsapp:hover, .button--whatsapp:focus-visible {
+            border-color: #25d366;
+            background: #25d366;
+            box-shadow: 0 12px 24px rgba(37, 211, 102, 0.24);
+            filter: none;
+        }
+        .button--telegram:hover, .button--telegram:focus-visible {
+            border-color: #229ed9;
+            background: #229ed9;
+            box-shadow: 0 12px 24px rgba(34, 158, 217, 0.24);
+            filter: none;
+        }
+        footer { padding-block: 23px; color: #a8aaa4; background: linear-gradient(180deg, #180d15 0%, #10090f 100%); font-size: 12px; }
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 22px;
+        }
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-left: auto;
+            color: var(--white);
+            font-family: var(--display-font);
+            font-size: clamp(18px, 2vw, 24px);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        .footer-brand-mark {
+            display: block;
+            width: 42px;
+            height: 42px;
+            flex: 0 0 auto;
+            object-fit: contain;
+            mix-blend-mode: screen;
+        }
+        .footer-visual {
+            display: grid;
+            place-items: center;
+            width: clamp(86px, 12vw, 120px);
+            height: clamp(54px, 7vw, 74px);
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            cursor: pointer;
+        }
+        .footer-visual img { display: block; width: 42px; height: 42px; object-fit: contain; }
+        .footer-visual:focus-visible { outline: 2px solid #ff8bc4; outline-offset: 4px; }
+        .intro-screen {
+            position: relative;
+            left: auto;
+            top: auto;
+            bottom: auto;
+            z-index: 1;
+            display: block;
+            width: min(760px, 100%);
+            margin: 22px auto 0;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            background: rgba(15, 8, 14, 0.82);
+            box-shadow: 0 20px 64px rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(12px);
+            transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
+        }
+        .intro-screen[hidden] { display: none; }
+        .intro-screen.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        .intro-screen.is-leaving { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(12px); }
+        .intro-title {
+            margin: 0 0 10px;
+            color: var(--white);
+            font-family: var(--display-font);
+            font-size: clamp(22px, 4vw, 30px);
+            line-height: 1.1;
+            text-align: center;
+        }
+        .intro-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 1;
+            display: none;
+            width: 34px;
+            height: 34px;
+            place-items: center;
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 50%;
+            background: rgba(32, 17, 25, 0.9);
+            color: var(--white);
+            font-size: 20px;
+            line-height: 1;
+            cursor: pointer;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+        }
+        .intro-close:hover, .intro-close:focus-visible { background: #a90059; }
+        .intro-video {
+            display: block;
+            width: 100%;
+            max-height: min(70vh, 420px);
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.24);
+            border-radius: 16px;
+            background: #10090f;
+        }
+        .intro-fallback {
+            display: none;
+            width: 100%;
+            min-height: 220px;
+            padding: 26px 20px 22px;
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 16px;
+            background:
+                linear-gradient(135deg, rgba(39, 19, 29, 0.96), rgba(93, 11, 62, 0.86)),
+                url("FLASH.jpg") center/cover no-repeat;
+            color: var(--white);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+        }
+        .intro-fallback.is-visible { display: grid; align-content: end; }
+        .intro-fallback-logo {
+            display: inline-flex;
+            width: 52px;
+            height: 52px;
+            padding: 8px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.09);
+            font-family: var(--display-font);
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: #ffd7ec;
+        }
+        .intro-fallback-title {
+            margin: 12px 0 8px;
+            font-family: var(--display-font);
+            font-size: clamp(30px, 5vw, 42px);
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+        }
+        .intro-fallback-text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #f9dceb;
+        }
+        @media (max-width: 760px) {
+            .intro-screen {
+                position: fixed;
+                top: 50%;
+                right: auto;
+                bottom: auto;
+                left: 50%;
+                z-index: 3000;
+                width: min(560px, calc(100vw - 24px));
+                max-width: calc(100vw - 24px);
+                padding: 8px;
+                margin: 0;
+                transform: translate(-50%, calc(-50% + 18px));
+            }
+            .intro-screen.is-visible { transform: translate(-50%, -50%); }
+            .intro-screen.is-leaving { transform: translate(-50%, calc(-50% + 18px)); }
+            .intro-close {
+                display: grid;
+                top: -10px;
+                right: -8px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .creator-dialog {
+            width: min(360px, calc(100vw - 32px));
+            max-width: none;
+            padding: 26px;
+            border: 1px solid rgba(143,255,0,0.28);
+            border-radius: 22px;
+            background: #223333;
+            color: var(--white);
+            box-shadow: 0 24px 80px rgba(10,5,10,0.46);
+        }
+        .creator-dialog::backdrop { background: rgba(15,8,14,0.62); backdrop-filter: blur(5px); }
+        .creator-dialog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+        .creator-dialog-logo { display: block; width: 54px; height: 54px; margin-bottom: 15px; object-fit: contain; }
+        .creator-dialog-kicker { margin: 0 0 5px; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+        .creator-dialog h2 { margin: 0 0 8px; color: var(--white); font-family: var(--display-font); font-size: 32px; line-height: 1; }
+        .creator-dialog-copy { margin: 0 0 20px; color: #fff; font-size: 13px; line-height: 1.55; }
+        .creator-dialog-close {
+            display: grid;
+            width: 38px;
+            height: 38px;
+            flex: 0 0 auto;
+            place-items: center;
+            border: 1px solid rgba(143,255,0,0.45);
+            border-radius: 12px;
+            background: transparent;
+            color: #8fff00;
+            cursor: pointer;
+        }
+        .creator-dialog-close .ui-icon { color: currentColor; }
+        .creator-dialog-actions { display: grid; gap: 10px; }
+        .creator-dialog-actions .button {
+            width: 100%;
+            min-height: 44px;
+            justify-content: flex-start;
+            gap: 10px;
+            border-color: #8fff00;
+            background: #8fff00;
+            color: #000;
+            box-shadow: 0 4px 0 #5caa00;
+        }
+        .creator-dialog-actions .button:hover,
+        .creator-dialog-actions .button:focus-visible {
+            border-color: #aaff40;
+            background: #aaff40;
+            color: #000;
+            box-shadow: 0 8px 18px rgba(143,255,0,0.2);
+            filter: none;
+        }
+        .creator-dialog-actions .button::before { display: none; }
+        .creator-dialog-actions .contact-button-icon { width: 19px; height: 19px; }
+        .creator-dialog[open] { animation: prompt-in 220ms ease-out both; }
+        .creator-dialog[open]::backdrop { animation: creator-backdrop-in 180ms ease-out both; }
+        @keyframes creator-backdrop-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .footer-copy { margin: 0; }
+        .footer-copy--muted { color: #a8aaa4; }
+        .app-stage { padding-top: 76px; }
+        .mobile-home { display: contents; }
+        .mobile-tabs { display: none; }
+        .contact-prompt {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 10;
+            width: min(380px, calc(100vw - 32px));
+            padding: 22px 52px 22px 22px;
+            border-left: 5px solid var(--orange);
+            background: linear-gradient(135deg, rgba(58, 17, 39, 0.96), rgba(43, 16, 31, 0.96));
+            box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+            color: var(--white);
+            animation: prompt-in 220ms ease-out both;
+            border-radius: 16px 16px 16px 0;
+        }
+        .contact-prompt[hidden] { display: none; }
+        .contact-prompt h2 { margin: 0 0 7px; font-family: var(--display-font); font-size: 27px; line-height: 1; }
+        .contact-prompt p { margin: 0 0 14px; color: #c3c5bf; font-size: 14px; line-height: 1.5; }
+        .contact-prompt .button { min-height: 40px; padding-inline: 14px; font-size: 13px; }
+        .prompt-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            min-width: 44px;
+            min-height: 44px;
+            padding: 0 6px;
+            border: 0;
+            background: transparent;
+            color: #c3c5bf;
+            font: 600 12px var(--body-font);
+            cursor: pointer;
+        }
+        .prompt-close:hover { color: var(--white); }
+        @keyframes prompt-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes prompt-mobile-in {
+            from { opacity: 0; transform: translate(-50%, calc(-50% + 10px)); }
+            to { opacity: 1; transform: translate(-50%, -50%); }
+        }
+        @keyframes hero-title-reveal {
+            0% { opacity: 0; filter: blur(10px); transform: translateY(34px) scale(.84) rotateX(12deg); }
+            68% { opacity: 1; filter: blur(0); transform: translateY(-4px) scale(1.025) rotateX(0); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes hero-title-shine {
+            0% { background-position: 100% 0; }
+            78% { background-position: -140% 0; }
+            100% {
+                background-position: -140% 0;
+                background-image: linear-gradient(105deg, #d40070, #d40070);
+            }
+        }
+        @keyframes hero-description-reveal {
+            0% { opacity: 0; clip-path: inset(0 100% 0 0); transform: translateY(10px); }
+            100% { opacity: 1; clip-path: inset(0 0 0 0); transform: translateY(0); }
+        }
+
+        @media (max-width: 760px) {
+            .wrap { width: min(100% - 36px, 560px); }
+            .nav { min-height: 68px; }
+            .brand { font-size: 22px; }
+            .nav-links { gap: 14px; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .nav-cta { min-height: 40px; padding-inline: 12px; font-size: 12px; }
+            .hero-inner { min-height: auto; padding-block: 48px 46px; }
+            .hero-heading-row { grid-template-columns: 1fr; gap: 18px; }
+            h1 { max-width: 540px; font-size: 54px; }
+            .hero-description { font-size: 14px; }
+            .hero-actions { display: grid; justify-items: start; gap: 9px; }
+            .hero-actions .button { min-height: 42px; padding-inline: 10px; font-size: 11px; white-space: nowrap; }
+            .hero-social { display: none; }
+            .hero-photos {
+                position: relative;
+                width: min(100%, 420px);
+                margin: 6px auto 0;
+                aspect-ratio: 1 / 1.06;
+                right: auto;
+                left: auto;
+                top: auto;
+                bottom: auto;
+            }
+            .hero-copy { width: 100%; }
+            .hero-photo--large { width: 96%; }
+            .hero-photo--medium { width: 70%; }
+            .device-list { grid-template-columns: repeat(3, 1fr); padding-block: 10px; }
+            .device-option { min-height: 44px; padding: 9px 5px; font-size: 20px; }
+            .device-option:nth-child(3) { border-right: 0; }
+            .device-option:nth-child(n + 4) { border-top: 1px solid #ffffff55; }
+            .services { padding-block: 72px 78px; }
+            .section-head { display: block; margin-bottom: 30px; }
+            h2 { font-size: 48px; }
+            .section-intro { margin-top: 16px; }
+            .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .service-item { min-height: 82px; gap: 10px; padding-right: 8px; font-size: 14px; }
+            .service-item:nth-child(3n + 2), .service-item:nth-child(3n) { padding-left: 0; border-left: 0; }
+            .service-item:nth-child(even) { padding-left: 14px; border-left: 1px solid #bfc2ba; }
+            .contact-inner { grid-template-columns: 1fr; gap: 32px; padding-block: 66px; }
+            .contact::after { width: 5px; }
+
+            html, body { height: auto; overflow-x: hidden; overflow-y: auto; overscroll-behavior-y: auto; }
+            body { height: auto; }
+            .topbar { height: 69px; }
+            .nav { height: 68px; }
+            .nav { position: relative; }
+            .nav-links { display: none; }
+            .app-stage { position: relative; height: calc(100dvh - 48px); min-height: 0; overflow: hidden; padding-top: 112px; }
+            .mobile-home {
+                position: relative;
+                inset: auto;
+                display: none;
+                flex-direction: column;
+                min-height: calc(100dvh - 160px);
+                height: calc(100dvh - 160px);
+            }
+            .services, .contact { position: relative; inset: auto; display: none; width: auto; height: 100%; max-height: 100%; max-width: none; margin: 0; overflow: visible; }
+            body[data-mobile-view="inicio"] .mobile-home { display: flex; }
+            body[data-mobile-view="servicios"] #servicios { display: flex; flex-direction: column; }
+            body[data-mobile-view="contacto"] #contacto { display: block; }
+            .mobile-home .hero { flex: 1 1 auto; min-height: 0; }
+            .mobile-home .hero-inner { width: 100%; height: 100%; min-height: 0; align-content: center; margin: 0; padding: 16px 18px 20px; }
+            .hero-description { margin-bottom: 14px; font-size: 13px; line-height: 1.45; }
+            .hero-actions { gap: 8px; }
+            .hero-actions .button { min-height: 40px; }
+            .hero-note { margin-top: 10px; }
+            .device-strip { flex: 0 0 auto; min-height: 0; }
+            .device-menu-toggle {
+                position: fixed;
+                top: 11px;
+                right: 15px;
+                z-index: 2000;
+                display: grid;
+                width: 46px;
+                height: 46px;
+                flex: 0 0 auto;
+                place-items: center;
+                padding: 0;
+                border: 1px solid rgba(255,255,255,0.38);
+                border-radius: 14px;
+                background: rgba(255,255,255,0.05);
+                color: var(--white);
+                box-shadow: 0 10px 20px rgba(15, 7, 12, 0.16);
+                cursor: pointer;
+                transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+            }
+            .device-menu-toggle:hover, .device-menu-toggle[aria-expanded="true"] {
+                background: linear-gradient(135deg, #a90059 0%, #d63d84 100%);
+                border-color: rgba(255,255,255,0.7);
+                box-shadow: 0 12px 24px rgba(169, 0, 89, 0.28);
+            }
+            .device-menu-toggle:active { transform: scale(0.98); }
+            .device-menu-toggle:focus-visible { outline: 2px solid #ff8bc4; outline-offset: 2px; }
+            .device-menu-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+            .device-menu-backdrop {
+                position: fixed;
+                inset: 0;
+                z-index: 998;
+                width: 100%;
+                height: 100dvh;
+                border: 0;
+                background: rgba(16, 10, 16, 0.52);
+                opacity: 1;
+                backdrop-filter: blur(2px);
+            }
+            .device-menu-backdrop[hidden] { display: none; }
+            .device-list, .device-list[hidden] {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 999;
+                display: flex;
+                width: min(76vw, 310px);
+                height: 100dvh;
+                min-height: 100dvh;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                gap: 12px;
+                margin: 0;
+                padding: 76px 12px 28px;
+                overflow-y: auto;
+                border-left: 1px solid rgba(255,139,196,0.58);
+                background: linear-gradient(180deg, rgba(33,12,28,0.98) 0%, rgba(48,17,36,0.98) 100%);
+                box-shadow: -18px 0 48px rgba(15, 8, 13, 0.52);
+                transform: translateX(105%);
+                visibility: hidden;
+                transition: transform 280ms cubic-bezier(.2,.75,.25,1), visibility 0s linear 280ms;
+                border-radius: 18px 0 0 18px;
+            }
+            #device-list, #device-list[hidden] { width: min(76vw, 310px); }
+            #device-list:not([hidden]) {
+                padding: 76px 12px 28px;
+                transform: translateX(0);
+                visibility: visible;
+                transition-delay: 0s;
+            }
+            .device-option {
+                min-height: 48px;
+                padding: 11px 10px;
+                border: 1px solid rgba(255,255,255,0.26);
+                border-radius: 14px;
+                background: rgba(255,255,255,0.02);
+                font-size: 15px;
+                line-height: 1.2;
+                overflow-wrap: anywhere;
+                transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+            }
+            .device-option:hover, .device-option:focus-visible {
+                background: rgba(255,255,255,0.06);
+                border-color: rgba(255,255,255,0.46);
+                transform: translateX(-2px);
+            }
+            .device-option:last-child { border: 1px solid rgba(255,255,255,0.26); }
+            .device-option.device-support-option {
+                display: flex;
+                width: 46px;
+                min-width: 46px;
+                min-height: 46px;
+                align-self: center;
+                justify-content: flex-start;
+                gap: 0;
+                margin-top: -2px;
+                padding: 6px;
+                overflow: hidden;
+                border: 1px solid transparent;
+                border-radius: 999px;
+                background: transparent;
+                transition: width 260ms ease, min-width 260ms ease, background-color 180ms ease, border-color 180ms ease;
+            }
+            .device-option.device-support-option:hover,
+            .device-option.device-support-option:focus-visible {
+                width: 116px;
+                min-width: 116px;
+                justify-content: flex-start;
+                gap: 8px;
+                border-color: transparent;
+                background: transparent;
+                transform: none;
+            }
+            .device-option.device-support-option img { width: 32px; height: 32px; flex: 0 0 auto; object-fit: contain; }
+            .device-support-option span {
+                display: block;
+                max-width: 0;
+                padding: 0;
+                border: 0;
+                font-family: var(--body-font);
+                font-size: 14px;
+                font-weight: 700;
+                overflow: hidden;
+                opacity: 0;
+                white-space: nowrap;
+                transform: translateX(-6px);
+                transition: max-width 260ms ease, opacity 180ms ease 60ms, transform 260ms ease;
+            }
+            .device-option.device-support-option:hover span,
+            .device-option.device-support-option:focus-visible span {
+                max-width: 70px;
+                opacity: 1;
+                transform: translateX(0);
+            }
+            .device-menu-close {
+                position: absolute;
+                top: 14px;
+                right: 12px;
+                display: grid;
+                width: 42px;
+                height: 42px;
+                place-items: center;
+                border: 1px solid rgba(255,255,255,0.4);
+                border-radius: 12px;
+                background: transparent;
+                color: var(--white);
+                cursor: pointer;
+            }
+            .device-menu-close:hover { background: #a90059; }
+            .device-menu-close .ui-icon { color: var(--white); }
+            .device-social { display: grid; justify-items: center; gap: 10px; margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.22); }
+            .device-social-label { margin: 0; color: #f4cadd; font: 700 11px var(--body-font); text-align: center; text-transform: uppercase; }
+            .device-social-icons { display: flex; align-items: center; justify-content: center; gap: 12px; color: var(--white); }
+            .device-social-icon { display: block; width: 22px; height: 22px; fill: currentColor; }
+            #servicios { width: 100%; }
+            .services {
+                height: 100%;
+                min-height: 0;
+                max-height: 100%;
+                padding: 18px 18px 28px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                overscroll-behavior-y: contain;
+                -webkit-overflow-scrolling: touch;
+                touch-action: pan-y;
+            }
+            .section-head { flex: 0 0 auto; margin-bottom: 12px; }
+            .section-head .eyebrow { margin-bottom: 8px; }
+            .services h2 { font-size: 42px; }
+            .section-intro { margin-top: 8px; font-size: 12px; line-height: 1.4; }
+            .service-grid { flex: 0 0 auto; min-height: 0; align-content: start; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(72px, auto)); }
+            .service-item { min-height: 72px; gap: 7px; padding: 5px 6px 5px 0; font-size: 12px; line-height: 1.25; }
+            .service-item > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+            .service-number { flex: 0 0 auto; font-size: 14px; }
+            .service-item .ui-icon { width: 17px; height: 17px; }
+            .service-item:nth-child(3n + 2), .service-item:nth-child(3n) { padding-left: 0; border-left: 0; }
+            .service-item:nth-child(even) { padding-left: 8px; border-left: 1px solid #bfc2ba; }
+            .contact { padding: 22px 20px; }
+            .contact-inner { display: flex; height: 100%; flex-direction: column; justify-content: center; gap: 22px; padding: 0; }
+            .contact h2 { font-size: 40px; }
+            .contact-copy > p:not(.eyebrow) { font-size: 13px; line-height: 1.5; }
+            .contact-details { gap: 12px; }
+            .contact-row { grid-template-columns: 76px minmax(0, 1fr); gap: 10px; padding-bottom: 12px; }
+            .contact-value { font-size: 14px; }
+            .contact-details .button { min-height: 42px; }
+            footer {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 50;
+                display: flex;
+                height: 48px;
+                align-items: center;
+                padding-block: 4px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+            .footer-inner { width: calc(100% - 30px); flex-direction: row; gap: 10px; }
+            .footer-copy { display: none; }
+            .footer-brand { gap: 7px; font-size: 16px; }
+            .footer-brand-mark { width: 30px; height: 30px; }
+            .footer-visual { display: none; }
+            .mobile-tabs { position: fixed; top: 68px; right: 0; bottom: auto; left: 0; z-index: 39; display: grid; height: 44px; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid rgba(255,255,255,0.08); background: linear-gradient(180deg, rgba(29,17,25,0.96) 0%, rgba(36,22,33,0.96) 100%); box-shadow: 0 8px 20px rgba(20,12,16,0.12); backdrop-filter: blur(10px); }
+            .mobile-tab { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px; padding: 0 4px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #a8aaa4; font: 600 11px var(--body-font); cursor: pointer; }
+            .mobile-tab .ui-icon { width: 15px; height: 15px; }
+            .mobile-tab[aria-selected="true"] { border-bottom-color: var(--orange); color: var(--white); }
+            .mobile-tab:focus-visible { outline: 2px solid var(--orange); outline-offset: -4px; }
+            .contact-prompt { top: 50%; right: auto; bottom: auto; left: 50%; transform: translate(-50%, -50%); animation-name: prompt-mobile-in; }
+        }
+        @media (max-width: 420px) {
+            .wrap { width: calc(100% - 30px); }
+            .brand { gap: 7px; font-size: 20px; }
+            .nav-cta { padding-inline: 9px; }
+            .footer-inner { flex-direction: row; gap: 10px; }
+            .hero-heading-row { grid-template-columns: minmax(0, 1fr) minmax(128px, 38%); gap: 10px; }
+            h1 { font-size: 46px; }
+            .hero-actions .button { padding-inline: 10px; font-size: 11px; }
+            .service-item { font-size: 13px; }
+            .contact-row { grid-template-columns: 75px minmax(0, 1fr); gap: 10px; }
+        }
+        @media (max-width: 360px) {
+            .mobile-home .hero-inner { padding: 10px 12px 12px; }
+            .hero-heading-row { grid-template-columns: minmax(0, 1fr) 104px; gap: 6px; }
+            .hero-heading-row .eyebrow { margin-bottom: 10px; font-size: 11px; }
+            h1 { margin-bottom: 10px; font-size: 34px; }
+            .hero-photos { aspect-ratio: 1 / 1.08; }
+            .hero-description { margin-bottom: 10px; font-size: 12px; }
+            .hero-actions { display: flex; flex-wrap: wrap; gap: 7px; }
+            .hero-actions .button { min-height: 34px; padding-inline: 6px; font-size: 10px; }
+            .hero-note { margin-top: 6px; font-size: 11px; }
+            .device-list { padding-block: 4px; }
+            .device-option { min-height: 30px; padding: 5px 2px; font-size: 14px; }
+            .repairs-dialog { max-height: 90dvh; }
+            .dialog-header { padding: 15px 16px; }
+            .dialog-header h2 { font-size: 32px; }
+            .gallery-content { max-height: calc(90dvh - 76px); padding: 14px; }
+            .repair-grid { grid-template-columns: 1fr; gap: 12px; }
+            .repair-card-copy { padding: 12px 14px 14px; }
+            .repair-card h3 { font-size: 23px; }
+            .contact-prompt { padding: 20px 48px 20px 18px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+            #hero-title, #hero-title span, .hero-description { animation: none; }
+            #hero-title span { background: none; -webkit-text-fill-color: var(--orange); }
+        }
+        .hero {
+            color: #35102d;
+            background-color: #f0cadd;
+            background-image: linear-gradient(90deg, #fff0f8e8 0%, #fff0f8c9 43%, #fff0f855 72%, #fff0f81a 100%), url("uploads/FONDEX.jpg");
+            background-position: center, center 54%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hero::before { background: #e60078; }
+        .hero .eyebrow, .hero-description, .hero-note { color: #54203f; }
+        .hero-note strong { color: #35102d; }
+        .hero .button--outline { border-color: #8e476e; color: #35102d; }
+        .hero .button--outline:hover { background: #fff0f8b8; border-color: #54203f; }
+        .hero-inner { position: relative; min-height: 590px; }
+        @media (min-width: 761px) {
+            .hero-inner { min-height: 650px; }
+        }
+        .hero-copy { position: relative; z-index: 1; width: min(62%, 700px); }
+        .hero-heading-row { display: block; }
+        .hero-photos {
+            position: absolute;
+            top: 0;
+            right: calc((min(1160px, calc(100vw - 48px)) - 100vw) / 2);
+            bottom: 0;
+            z-index: 0;
+            width: 45%;
+            max-width: 500px;
+            aspect-ratio: auto;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .hero-flyer {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            mix-blend-mode: screen;
+        }
+        .hero-photo { display: none; }
+        .device-strip { background: #d40070; }
+        .contact { background: #35102d; }
+        .services { background-color: var(--paper); }
+        .button, .nav-cta { box-shadow: 0 4px 0 #790044; }
+        .button--outline { box-shadow: none; }
+        .repairs-dialog { border-color: #9f005d; }
+        .repair-image { background: #4a1639; }
+        .contact-prompt { border-left-color: #ff5ba9; }
+        @media (max-width: 760px) {
+            .hero { background-position: center, 48% 56%; }
+            .brand-logo { width: 60px; height: 66px; }
+            .hero-inner { min-height: 0; }
+            .hero-copy { width: 62%; }
+            .hero-photos { right: -12px; width: 48%; }
+            .hero-description { max-width: 100%; }
+            .hero-actions { max-width: 100%; }
+            .service-gallery { margin-top: 18px; padding: 14px; border-radius: 18px; }
+            .service-gallery-head { margin-bottom: 12px; }
+            .service-gallery-title { font-size: 24px; }
+            .service-gallery-subtitle { font-size: 11px; }
+            .service-gallery-control { width: 38px; height: 38px; }
+            .service-gallery-track { grid-auto-columns: minmax(170px, 72%); gap: 10px; }
+            .service-gallery-slide { height: 235px; }
+            .device-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .device-option:nth-child(3) { border-right: 1px solid #ffffff55; }
+            .device-option:nth-child(even) { border-right: 0; }
+            .device-option:nth-child(n + 3) { border-top: 1px solid #ffffff55; }
+        }
+        @media (max-width: 420px) {
+            .hero-copy { width: 65%; }
+            .hero-photos { right: -8px; width: 47%; }
+            .hero-actions .button { white-space: normal; text-align: center; }
+            .service-gallery-track { grid-auto-columns: 82%; }
+        }
+        @media (max-width: 360px) {
+            .hero-copy { width: 68%; }
+            .hero-photos { right: -6px; width: 45%; }
+        }
+    </style>
+</head>
+<body data-mobile-view="inicio">
+    <div class="intro-screen" id="intro-screen" role="dialog" aria-labelledby="intro-title" aria-modal="true" hidden>
+        <button class="intro-close" type="button" aria-label="Cerrar presentación">×</button>
+        <h2 class="intro-title" id="intro-title">La belleza en tus manos</h2>
+        <div class="intro-fallback" id="intro-fallback" aria-hidden="true">
+            <div class="intro-fallback-logo">MN</div>
+            <h2 class="intro-fallback-title">Mónica Nails</h2>
+            <p class="intro-fallback-text">Belleza en cada detalle · kapping gel · semipermanente · JellyTips · rubber</p>
+        </div>
+        <video class="intro-video" id="intro-video" src="./uploads/load.mp4" muted playsinline preload="auto" aria-label="Presentación de bienvenida"></video>
+    </div>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <symbol id="icon-screen" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+        <symbol id="icon-battery" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M21 10v4m-13-2h6m-3-3v6"/></symbol>
+        <symbol id="icon-plug" viewBox="0 0 24 24"><path d="M7 2v5m10-5v5M5 7h14v4a7 7 0 0 1-7 7h0a7 7 0 0 1-7-7V7Zm7 11v4"/></symbol>
+        <symbol id="icon-drive" viewBox="0 0 24 24"><path d="M4 5h16l2 14H2L4 5Z"/><path d="M4 14h16m-12 3h.01m4 0h.01"/></symbol>
+        <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 14 .9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14ZM5 3l.7 1.3L7 5l-1.3.7L5 7l-.7-1.3L3 5l1.3-.7L5 3Z"/></symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+        <symbol id="icon-gamepad" viewBox="0 0 24 24"><path d="M6 9h12a4 4 0 0 1 3.9 4.9l-1 4a2.5 2.5 0 0 1-4.1 1.3L14 17h-4l-2.8 2.2a2.5 2.5 0 0 1-4.1-1.3l-1-4A4 4 0 0 1 6 9Z"/><path d="M7 12v4m-2-2h4m8-.5h.01m2 2h.01"/></symbol>
+        <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 18 6.5L20 12M4 12l2 5.5A7 7 0 0 0 18.4 15"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z"/></symbol>
+        <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+        <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M19.6 7.1a6.3 6.3 0 0 1-4.3-2V15a5.5 5.5 0 1 1-5.5-5.5c.4 0 .8 0 1.2.1v3a2.6 2.6 0 1 0 1.8 2.5V2h3a6.2 6.2 0 0 0 3.8 2.2v2.9Z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4Z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.8" r="1.2"/></symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.7a12 12 0 0 0 5.7 1.4h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.1-1.2-6-3.4-8.3ZM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.7 9.7 0 0 1-1.5-5.2C2.2 6.5 6.6 2.1 12 2.1c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8Zm5.4-7.3c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.1 3.2 5 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></symbol>
+        <symbol id="icon-telegram" viewBox="0 0 24 24"><path d="M22.4 2.2 19 21.1c-.3 1.3-1 1.6-2.1 1l-5.8-4.3-2.8 2.7c-.3.3-.5.5-1 .5l.4-5.9L18.5 5.4c.5-.4-.1-.7-.7-.3L4.1 13.7l-5.8-1.8c-1.3-.4-1.3-1.3.3-1.9L20.8 1.7c1.1-.4 2-.3 1.6.5Z" transform="translate(1 0)"/></symbol>
+        <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+        <symbol id="icon-polish" viewBox="0 0 24 24"><path d="M9 3h6v4H9zM8 7h8l1 3v10a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V10l1-3Z"/><path d="M7 13h10"/></symbol>
+        <symbol id="icon-nail" viewBox="0 0 24 24"><path d="M8 21c-2-2-3-5-3-9a3 3 0 0 1 6 0v2-5a3 3 0 0 1 6 0v5-3a2.5 2.5 0 0 1 5 0v5c0 3-2 5-5 5H8Z"/><path d="M6 11c1-1 3-1 4 0"/></symbol>
+    </svg>
+    <header class="topbar">
+        <nav class="nav wrap" aria-label="Navegación principal">
+            <a class="brand" href="#inicio"><img class="brand-logo" src="ICON.png" alt="Mónica Nails"></a>
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <button class="device-menu-toggle" type="button" aria-label="Abrir menú de tratamientos" title="Menú de tratamientos" aria-expanded="false" aria-controls="device-list">
+        <svg class="device-menu-icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+    </button>
+
+    <main class="app-stage">
+        <div class="mobile-home" id="panel-inicio" role="tabpanel" aria-labelledby="tab-inicio">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-inner wrap">
+                <div class="hero-copy">
+                    <div class="hero-heading-row">
+                        <div>
+                            <p class="eyebrow">Belleza en cada detalle</p>
+                            <h1 id="hero-title">Mónica<br><span>Nails</span></h1>
+                        </div>
+                    </div>
+                    <p class="hero-description">Tratamiento de belleza para tus uñas, tratamos: kapping gel, semipermanente, JellyTips y nivelación de rubber.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="#servicios">Ver tratamientos</a>
+                        <div class="hero-social" role="group" aria-label="Redes sociales">
+                            <p class="hero-social-label">Redes sociales</p>
+                            <div class="hero-social-icons">
+                                <a href="https://www.tiktok.com/@la_nerrita_19?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="hero-social-icon" aria-hidden="true"><use href="#icon-tiktok"/></svg></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="hero-social-icon" aria-hidden="true"><use href="#icon-facebook"/></svg></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="hero-social-icon" aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-photos" aria-hidden="true">
+                    <img class="hero-flyer" src="FOND_HEADER.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="device-strip" aria-label="Tratamientos">
+            <button class="device-menu-backdrop" type="button" aria-label="Cerrar menú de tratamientos" hidden></button>
+            <div class="device-list wrap" id="device-list" hidden>
+                <button class="device-menu-close" type="button" aria-label="Cerrar menú de tratamientos"><svg class="ui-icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+                <button class="device-option" type="button" data-gallery-category="Kapping Gel">Kapping Gel</button>
+                <button class="device-option" type="button" data-gallery-category="Semipermanente">Semipermanente</button>
+                <button class="device-option" type="button" data-gallery-category="JellyTips">JellyTips</button>
+                <button class="device-option" type="button" data-gallery-category="Rubber">Rubber</button>
+                <div class="device-social" role="group" aria-label="Redes sociales">
+                    <p class="device-social-label">Redes sociales</p>
+                    <div class="device-social-icons">
+                        <a href="https://www.tiktok.com/@la_nerrita_19?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="device-social-icon" aria-hidden="true"><use href="#icon-tiktok"/></svg></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="device-social-icon" aria-hidden="true"><use href="#icon-facebook"/></svg></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="device-social-icon" aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+                    </div>
+                </div>
+                <button class="device-option device-support-option" type="button" aria-label="Soporte" aria-haspopup="dialog">
+                    <img src="./assets/favicon.png" width="32" height="32" alt="">
+                    <span>Soporte</span>
+                </button>
+            </div>
+        </section>
+        </div>
+
+        <section class="services wrap" id="servicios" role="tabpanel" aria-labelledby="tab-servicios">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Manos y pies</p>
+                    <h2 id="services-title">Servicios</h2>
+                </div>
+                <p class="section-intro">Tratamientos del flyer para lucir unas uñas cuidadas y con el acabado que buscas.</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-item"><span class="service-number">01</span><svg class="ui-icon" aria-hidden="true"><use href="#icon-sparkles"/></svg><span>Kapping gel</span></div>
+                <div class="service-item"><span class="service-number">02</span><svg class="ui-icon" aria-hidden="true"><use href="#icon-nail"/></svg><span>Manicure semipermanente</span></div>
+                <div class="service-item"><span class="service-number">03</span><svg class="ui-icon" aria-hidden="true"><use href="#icon-sparkles"/></svg><span>Pedicure semipermanente</span></div>
+                <div class="service-item"><span class="service-number">04</span><svg class="ui-icon" aria-hidden="true"><use href="#icon-polish"/></svg><span>Sistema JellyTips</span></div>
+                <div class="service-item"><span class="service-number">05</span><svg class="ui-icon" aria-hidden="true"><use href="#icon-nail"/></svg><span>Nivelación de rubber</span></div>
+            </div>
+            <section class="service-gallery" aria-label="Inspiración: carrusel de diseños de uñas">
+                <div class="service-gallery-head">
+                    <div>
+                        <h3 class="service-gallery-title">Inspiración</h3>
+                        <p class="service-gallery-subtitle">Diseños realizados en Mónica Nails</p>
+                    </div>
+                    <div class="service-gallery-controls" aria-label="Controles del carrusel">
+                        <button class="service-gallery-control" type="button" data-gallery-direction="-1" aria-label="Ver diseños anteriores" disabled>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="service-gallery-control" type="button" data-gallery-direction="1" aria-label="Ver más diseños">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="service-gallery-track" role="group" aria-roledescription="carrusel" aria-label="Diseños de uñas">
+                    <figure class="service-gallery-slide">
+                        <img class="service-gallery-art" src="https://i.pinimg.com/236x/74/2a/1d/742a1d4e1ee493ab0038c7b0149e40fd.jpg" alt="Inspiración de kapping gel compartida en Pinterest" loading="lazy">
+                        <a class="service-gallery-credit" href="https://www.pinterest.com/pin/763149099404969307/" target="_blank" rel="noopener noreferrer">Inspiración: Capping gel · Erika Molina · Ver en Pinterest</a>
+                    </figure>
+                    <figure class="service-gallery-slide">
+                        <img class="service-gallery-art" src="https://i.pinimg.com/236x/7c/ba/1a/7cba1ab48f96ebd7c96743f58edf6a3f.jpg" alt="Inspiración de uñas semipermanentes en tonos pastel" loading="lazy">
+                        <a class="service-gallery-credit" href="https://www.pinterest.com/pin/979884831444835641/" target="_blank" rel="noopener noreferrer">Inspiración: uñas semipermanentes · KOOS.STUDIO · Ver en Pinterest</a>
+                    </figure>
+                    <figure class="service-gallery-slide">
+                        <img class="service-gallery-art" src="https://i.pinimg.com/236x/f4/b2/27/f4b22722e0938d0885d8dc38c12159ef.jpg" alt="Inspiración de diseño de uñas compartida en Pinterest" loading="lazy">
+                        <a class="service-gallery-credit" href="https://www.pinterest.com/pin/985231164915126/" target="_blank" rel="noopener noreferrer">Inspiración: Donna King · Ver en Pinterest</a>
+                    </figure>
+                    <figure class="service-gallery-slide">
+                        <img class="service-gallery-art" src="https://i.pinimg.com/236x/c5/33/f2/c533f2f22ad04dc83c322315a765cc20.jpg" alt="Inspiración para la técnica Jelly Tips" loading="lazy">
+                        <a class="service-gallery-credit" href="https://www.pinterest.com/pin/626704104441601518/" target="_blank" rel="noopener noreferrer">Inspiración: Jelly Tips · Katherine Castañeda · Ver en Pinterest</a>
+                    </figure>
+                    <figure class="service-gallery-slide">
+                        <img class="service-gallery-art" src="https://i.pinimg.com/236x/e3/0f/0b/e30f0be2fd2abac8f1b3dbb595aeebdb.jpg" alt="Inspiración de nivelación Rubber" loading="lazy">
+                        <a class="service-gallery-credit" href="https://www.pinterest.com/pin/624030092165807771/" target="_blank" rel="noopener noreferrer">Inspiración: nivelación Rubber · Vintage Nails Spa · Ver en Pinterest</a>
+                    </figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE9.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 1" loading="lazy"></figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE10.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 2" loading="lazy"></figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE11.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 3" loading="lazy"></figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE13.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 5" loading="lazy"></figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE14.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 6" loading="lazy"></figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE15.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 7" loading="lazy"></figure>
+                    <figure class="service-gallery-slide"><img class="service-gallery-art" src="uploads/IMAGE16.jpg" alt="Diseño de uñas de Mónica Nails, ejemplo 8" loading="lazy"></figure>
+                </div>
+            </section>
+        </section>
+
+        <section class="contact" id="contacto" role="tabpanel" aria-labelledby="tab-contacto">
+            <div class="contact-inner wrap">
+                <div class="contact-copy">
+                    <p class="eyebrow">Mónica Nails</p>
+                    <h2 id="contact-title">Uñas cuidadas, acabado impecable</h2>
+                    <p>Consulta por el tratamiento que te interesa.</p>
+                </div>
+                <div class="contact-details">
+                    <a class="button button--whatsapp" href="https://wa.me/584262189896" target="_blank" rel="noopener noreferrer"><svg class="contact-button-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp</a>
+                    <a class="button button--telegram" href="https://t.me/Monic_019" target="_blank" rel="noopener noreferrer"><svg class="contact-button-icon" aria-hidden="true"><use href="#icon-telegram"/></svg>Telegram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="repairs-dialog" id="repairs-dialog" aria-labelledby="gallery-title">
+        <div class="dialog-header">
+            <div>
+                <p class="dialog-kicker">Galería de trabajos</p>
+                <h2 id="gallery-title">Trabajos</h2>
+            </div>
+            <button class="dialog-close" type="button" aria-label="Cerrar galería">
+                <svg class="ui-icon" aria-hidden="true"><use href="#icon-close"/></svg>
+            </button>
+        </div>
+        <div class="gallery-content" id="gallery-content" aria-live="polite"></div>
+    </dialog>
+
+    <footer>
+        <div class="footer-inner wrap">
+            <p class="footer-copy footer-copy--muted">Mónica Nails · Manicure y pedicure</p>
+            <div class="footer-brand" aria-label="Mónica Nails">
+                <img class="footer-brand-mark" src="ICON.png" alt="">
+                <span>Mónica Nails</span>
+            </div>
+            <button class="footer-visual creator-dialog-open" type="button" aria-label="Contactar al creador de la página" aria-haspopup="dialog">
+                <img src="./assets/favicon.png" width="42" height="42" alt="">
+            </button>
+        </div>
+    </footer>
+
+    <dialog class="creator-dialog" id="creator-dialog" aria-labelledby="creator-dialog-title">
+        <div class="creator-dialog-header">
+            <div>
+                <img class="creator-dialog-logo" src="./assets/favicon.png" alt="Logo del creador">
+                <p class="creator-dialog-kicker">Contacto directo</p>
+                <h2 id="creator-dialog-title">Creador de la página</h2>
+            </div>
+            <button class="creator-dialog-close" type="button" aria-label="Cerrar ventana de contacto">
+                <svg class="ui-icon" aria-hidden="true"><use href="#icon-close"/></svg>
+            </button>
+        </div>
+        <p class="creator-dialog-copy">¿Necesitas una página o quieres consultar sobre este diseño? Escríbeme por el canal que prefieras.</p>
+        <div class="creator-dialog-actions">
+            <a class="button button--whatsapp" href="https://wa.me/584264214126" target="_blank" rel="noopener noreferrer"><svg class="contact-button-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp · +58 426 421 4126</a>
+            <a class="button button--telegram" href="https://t.me/+584264214126" target="_blank" rel="noopener noreferrer"><svg class="contact-button-icon" aria-hidden="true"><use href="#icon-telegram"/></svg>Telegram</a>
+            <a class="button" href="mailto:informaticon2025@gmail.com"><svg class="contact-button-icon" aria-hidden="true"><use href="#icon-mail"/></svg>informaticon2025@gmail.com</a>
+        </div>
+    </dialog>
+
+    <nav class="mobile-tabs" role="tablist" aria-label="Secciones">
+        <button class="mobile-tab" id="tab-inicio" type="button" role="tab" aria-controls="panel-inicio" aria-selected="true" tabindex="0" data-view="inicio"><svg class="ui-icon" aria-hidden="true"><use href="#icon-home"/></svg>Inicio</button>
+        <button class="mobile-tab" id="tab-servicios" type="button" role="tab" aria-controls="servicios" aria-selected="false" tabindex="-1" data-view="servicios"><svg class="ui-icon" aria-hidden="true"><use href="#icon-grid"/></svg>Servicios</button>
+        <button class="mobile-tab" id="tab-contacto" type="button" role="tab" aria-controls="contacto" aria-selected="false" tabindex="-1" data-view="contacto"><svg class="ui-icon" aria-hidden="true"><use href="#icon-message"/></svg>Contacto</button>
+    </nav>
+
+    <aside class="contact-prompt" id="contact-prompt" role="status" aria-live="polite" aria-labelledby="prompt-title" hidden>
+        <button class="prompt-close" type="button" aria-label="Cerrar aviso">Cerrar</button>
+        <h2 id="prompt-title">¿Necesitas ayuda?</h2>
+        <p>Contáctate para hacer tu cita por WhatsApp.</p>
+        <a class="button button--whatsapp" href="https://wa.me/584262189896" target="_blank" rel="noopener noreferrer"><svg class="contact-button-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>WhatsApp</a>
+    </aside>
+
+    <script>
+        const introScreen = document.querySelector("#intro-screen");
+        const introVideo = document.querySelector("#intro-video");
+        const introFallback = document.querySelector("#intro-fallback");
+        const introClose = document.querySelector(".intro-close");
+        const introGallery = document.querySelector(".service-gallery");
+        const introMobileMedia = window.matchMedia("(max-width: 760px)");
+        let introFinished = false;
+        let introContentReady = false;
+        let introPresentationRequested = false;
+        let introDelayTimer = 0;
+        let introAutoCloseTimer = 0;
+
+        function positionIntroScreen() {
+            if (introMobileMedia.matches) {
+                document.body.append(introScreen);
+            } else {
+                introGallery.after(introScreen);
+            }
+        }
+
+        function handleIntroViewportChange() {
+            positionIntroScreen();
+            if (introMobileMedia.matches) {
+                if (introScreen.classList.contains("is-visible")) {
+                    if (!introAutoCloseTimer) {
+                        introAutoCloseTimer = window.setTimeout(finishIntro, 30 * 1000);
+                    }
+                } else if (!introPresentationRequested && !introDelayTimer) {
+                    introDelayTimer = window.setTimeout(() => {
+                        introDelayTimer = 0;
+                        introPresentationRequested = true;
+                        if (introContentReady) showIntroAd();
+                    }, 30 * 1000);
+                }
+                return;
+            }
+
+            window.clearTimeout(introDelayTimer);
+            introDelayTimer = 0;
+            window.clearTimeout(introAutoCloseTimer);
+            introAutoCloseTimer = 0;
+            introPresentationRequested = true;
+            if (introContentReady) showIntroAd();
+        }
+
+        positionIntroScreen();
+        introMobileMedia.addEventListener("change", handleIntroViewportChange);
+        handleIntroViewportChange();
+
+        function showFallbackIntro() {
+            introVideo.style.display = "none";
+            introFallback.classList.add("is-visible");
+            introFallback.setAttribute("aria-hidden", "false");
+            introContentReady = true;
+            if (introPresentationRequested) showIntroAd();
+        }
+
+        function finishIntro() {
+            if (introFinished) return;
+            introFinished = true;
+            if (!introVideo.paused) introVideo.pause();
+            window.clearTimeout(introAutoCloseTimer);
+            introScreen.classList.add("is-leaving");
+            window.setTimeout(() => {
+                introScreen.hidden = true;
+                introScreen.classList.remove("is-leaving");
+                introScreen.setAttribute("aria-modal", "false");
+            }, 300);
+        }
+
+        function showIntroAd() {
+            if (introFinished || !introContentReady || introScreen.classList.contains("is-visible")) return;
+            introVideo.style.display = "block";
+            introFallback.classList.remove("is-visible");
+            introFallback.setAttribute("aria-hidden", "true");
+            introScreen.hidden = false;
+            window.requestAnimationFrame(() => introScreen.classList.add("is-visible"));
+            if (introMobileMedia.matches) {
+                introAutoCloseTimer = window.setTimeout(finishIntro, 30 * 1000);
+            }
+            introVideo.play().catch((error) => {
+                console.warn("No se pudo reproducir el anuncio de bienvenida; se muestra una vista alterna.", error);
+                showFallbackIntro();
+            });
+        }
+
+        function markIntroContentReady() {
+            introContentReady = true;
+            if (introPresentationRequested) showIntroAd();
+        }
+
+        function createIntroFallback() {
+            showFallbackIntro();
+        }
+
+        function createDynamicIntroVideo() {
+            if (!window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream) {
+                createIntroFallback();
+                return;
+            }
+
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            canvas.width = 1280;
+            canvas.height = 720;
+
+            const brandImage = new Image();
+            brandImage.crossOrigin = "anonymous";
+            brandImage.src = "FLASH.jpg";
+
+            const stream = canvas.captureStream(30);
+            const mimeType = [
+                "video/webm;codecs=vp9",
+                "video/webm;codecs=vp8",
+                "video/webm"
+            ].find((type) => MediaRecorder.isTypeSupported(type));
+
+            const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+            const chunks = [];
+
+            recorder.ondataavailable = (event) => {
+                if (event.data && event.data.size > 0) chunks.push(event.data);
+            };
+
+            recorder.onstop = () => {
+                const blob = new Blob(chunks, { type: recorder.mimeType || "video/webm" });
+                const videoUrl = URL.createObjectURL(blob);
+                introVideo.src = videoUrl;
+                introVideo.muted = true;
+                introVideo.playsInline = true;
+                introVideo.load();
+                introVideo.addEventListener("loadeddata", markIntroContentReady, { once: true });
+                introVideo.addEventListener("error", () => {
+                    console.warn("La intro generada no pudo cargarse, se usa la vista fallback.");
+                    createIntroFallback();
+                }, { once: true });
+            };
+
+            function drawIntroFrame(timestamp) {
+                if (introFinished) {
+                    stream.getTracks().forEach((track) => track.stop());
+                    return;
+                }
+
+                const elapsed = timestamp % 3000;
+                const phase = elapsed / 3000;
+                const glow = 0.5 + Math.sin(phase * Math.PI * 2) * 0.25;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                const back = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+                back.addColorStop(0, "#140812");
+                back.addColorStop(0.52, "#2a1023");
+                back.addColorStop(1, "#0d0910");
+                ctx.fillStyle = back;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.fillStyle = "rgba(230, 0, 120, 0.18)";
+                ctx.beginPath();
+                ctx.arc(1000, 150, 220 + glow * 60, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = "rgba(255,255,255,0.06)";
+                for (let i = 0; i < 14; i += 1) {
+                    const x = (i * 117 + phase * 180) % (canvas.width + 100) - 50;
+                    const y = 80 + (i % 5) * 120;
+                    ctx.fillRect(x, y, 30, 2);
+                }
+
+                const panelX = 140;
+                const panelY = 90;
+                const panelW = canvas.width - 280;
+                const panelH = canvas.height - 180;
+                ctx.fillStyle = "rgba(255, 255, 255, 0.04)";
+                ctx.fillRect(panelX, panelY, panelW, panelH);
+
+                if (brandImage.complete) {
+                    const radius = 90;
+                    const circleX = panelX + 180;
+                    const circleY = panelY + (panelH / 2) + 10;
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.arc(circleX, circleY, radius, 0, Math.PI * 2);
+                    ctx.clip();
+                    ctx.drawImage(brandImage, circleX - radius, circleY - radius, radius * 2, radius * 2);
+                    ctx.restore();
+                    ctx.strokeStyle = "rgba(255,255,255,0.65)";
+                    ctx.lineWidth = 4;
+                    ctx.beginPath();
+                    ctx.arc(circleX, circleY, radius, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+
+                ctx.fillStyle = "#ffbddf";
+                ctx.font = "700 42px 'DM Sans', sans-serif";
+                ctx.fillText("BELLEZA EN CADA DETALLE", panelX + 330, panelY + 130);
+
+                ctx.fillStyle = "#ffffff";
+                ctx.font = "800 120px 'Barlow Condensed', sans-serif";
+                ctx.fillText("MÓNICA", panelX + 330, panelY + 260);
+                ctx.fillText("NAILS", panelX + 330, panelY + 355);
+
+                ctx.fillStyle = "#ffc9e4";
+                ctx.font = "600 30px 'DM Sans', sans-serif";
+                ctx.fillText("kapping gel • semipermanente • JellyTips • rubber", panelX + 330, panelY + 415);
+
+                ctx.fillStyle = "rgba(255,255,255,0.86)";
+                ctx.fillRect(panelX + 330, panelY + 460, 240, 52);
+                ctx.fillStyle = "#3f0d2d";
+                ctx.font = "700 28px 'DM Sans', sans-serif";
+                ctx.fillText("Ver servicios", panelX + 352, panelY + 495);
+
+                ctx.fillStyle = "rgba(255,255,255,0.12)";
+                ctx.fillRect(0, canvas.height - 48, canvas.width, 48);
+
+                if (elapsed < 2500) {
+                    const pulse = 1 + Math.sin(timestamp * 0.01) * 0.06;
+                    ctx.translate(canvas.width / 2, canvas.height / 2);
+                    ctx.scale(pulse, pulse);
+                    ctx.translate(-canvas.width / 2, -canvas.height / 2);
+                }
+
+                requestAnimationFrame(drawIntroFrame);
+            }
+
+            recorder.start();
+            requestAnimationFrame(drawIntroFrame);
+            window.setTimeout(() => {
+                recorder.stop();
+                stream.getTracks().forEach((track) => track.stop());
+            }, 3300);
+        }
+
+        introVideo.muted = true;
+        introClose.addEventListener("click", finishIntro);
+        introScreen.addEventListener("click", (event) => {
+            if (event.target === introScreen) finishIntro();
+        });
+        introVideo.addEventListener("ended", () => {
+            if (!introFinished) {
+                introVideo.currentTime = 0;
+                introVideo.play().catch(() => showFallbackIntro());
+            }
+        });
+        introVideo.addEventListener("error", (event) => {
+            console.warn("No se pudo cargar el anuncio de bienvenida.", event.error || event);
+            createIntroFallback();
+        }, { once: true });
+
+        function startIntroAdAfterPageLoad() {
+            if (introVideo.src && introVideo.src !== window.location.href) {
+                markIntroContentReady();
+                return;
+            }
+            createDynamicIntroVideo();
+        }
+
+        if (document.readyState === "complete") {
+            startIntroAdAfterPageLoad();
+        } else {
+            window.addEventListener("load", startIntroAdAfterPageLoad, { once: true });
+        }
+
+        const contactPrompt = document.querySelector("#contact-prompt");
+        const closePrompt = contactPrompt.querySelector(".prompt-close");
+        const creatorDialog = document.querySelector("#creator-dialog");
+        const creatorDialogTriggers = document.querySelectorAll(".creator-dialog-open");
+        const closeCreatorDialog = creatorDialog.querySelector(".creator-dialog-close");
+        const repairsDialog = document.querySelector("#repairs-dialog");
+        const galleryContent = document.querySelector("#gallery-content");
+        const galleryTitle = document.querySelector("#gallery-title");
+        const closeGallery = repairsDialog.querySelector(".dialog-close");
+        const deviceMenuToggle = document.querySelector(".device-menu-toggle");
+        const deviceMenu = document.querySelector("#device-list");
+        const deviceMenuBackdrop = document.querySelector(".device-menu-backdrop");
+        const deviceMenuClose = document.querySelector(".device-menu-close");
+        const placeholderImage = "FLASH.jpg";
+        const initialPromptDelay = 30 * 1000;
+        const promptRepeatDelay = 3 * 60 * 1000;
+
+        function showContactPrompt() {
+            contactPrompt.hidden = false;
+        }
+
+        closePrompt.addEventListener("click", () => {
+            contactPrompt.hidden = true;
+        });
+        creatorDialogTriggers.forEach((trigger) => {
+            trigger.addEventListener("click", () => creatorDialog.showModal());
+        });
+        closeCreatorDialog.addEventListener("click", () => creatorDialog.close());
+        creatorDialog.addEventListener("click", (event) => {
+            if (event.target === creatorDialog) creatorDialog.close();
+        });
+
+        function normalizeText(value) {
+            return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+        }
+
+        function parseRepairArticle(text, number) {
+            const fields = {};
+            const fieldNames = {
+                titulo: "title",
+                categoria: "category",
+                imagen: "image",
+                descripcion: "description"
+            };
+            let activeField = "";
+
+            text.split(/\r?\n/).forEach((line) => {
+                const match = line.match(/^\s*(t[ií]tulo|categor[ií]a|imagen|descripci[oó]n)\s*:\s*(.*)$/i);
+                if (match) {
+                    activeField = fieldNames[normalizeText(match[1])];
+                    fields[activeField] = match[2].trim();
+                } else if (activeField && line.trim()) {
+                    fields[activeField] = `${fields[activeField]} ${line.trim()}`.trim();
+                }
+            });
+
+            if (!fields.title || !fields.category || !fields.description) return null;
+            return { ...fields, number, image: fields.image || placeholderImage };
+        }
+
+        let repairCatalogPromise;
+        let currentGalleryCategory = "";
+
+        function loadRepairCatalog() {
+            if (!repairCatalogPromise) {
+                repairCatalogPromise = (async () => {
+                    const articles = [];
+                    let articleNumbers;
+                    try {
+                        const catalogResponse = await fetch("TXT/catalog.json", { cache: "no-store" });
+                        if (catalogResponse.ok) {
+                            const catalog = await catalogResponse.json();
+                            if (Array.isArray(catalog.articles)) articleNumbers = catalog.articles;
+                        }
+                    } catch {
+                        articleNumbers = undefined;
+                    }
+
+                    const numbersToLoad = articleNumbers ?? Array.from({ length: 200 }, (_, index) => index + 1);
+                    for (const number of numbersToLoad) {
+                        let response;
+                        try {
+                            response = await fetch(`TXT/art_${number}.txt`, { cache: "no-store" });
+                        } catch {
+                            if (articleNumbers === undefined) break;
+                            continue;
+                        }
+                        if (!response.ok) {
+                            if (articleNumbers === undefined && response.status === 404) break;
+                            continue;
+                        }
+                        const article = parseRepairArticle(await response.text(), number);
+                        if (article) articles.push(article);
+                    }
+                    return articles;
+                })();
+            }
+            return repairCatalogPromise;
+        }
+
+        function createRepairCard(article) {
+            const card = document.createElement("article");
+            card.className = "repair-card";
+            const image = document.createElement("img");
+            image.className = "repair-image";
+            image.alt = `Fotografía del servicio: ${article.title}`;
+            image.addEventListener("error", () => {
+                if (image.dataset.fallback !== "shown") {
+                    image.dataset.fallback = "shown";
+                    image.src = placeholderImage;
+                    image.alt = "Flyer de servicios Mónica Nails";
+                } else {
+                    image.hidden = true;
+                }
+            });
+            image.src = article.image || placeholderImage;
+
+            const copy = document.createElement("div");
+            copy.className = "repair-card-copy";
+            const category = document.createElement("p");
+            category.className = "repair-category";
+            category.textContent = article.category;
+            const title = document.createElement("h3");
+            title.textContent = article.title;
+            const description = document.createElement("p");
+            description.className = "repair-description";
+            description.textContent = article.description;
+            copy.append(category, title, description);
+            card.append(image, copy);
+            return card;
+        }
+
+        function showGalleryEmptyState(category) {
+            const empty = document.createElement("div");
+            empty.className = "gallery-empty";
+            const image = document.createElement("img");
+            image.src = placeholderImage;
+            image.alt = "Flyer de servicios Mónica Nails";
+            image.addEventListener("error", () => {
+                image.hidden = true;
+            }, { once: true });
+            const message = document.createElement("p");
+            message.textContent = `Pronto habrá trabajos publicados de ${category}.`;
+            empty.append(image, message);
+            galleryContent.replaceChildren(empty);
+        }
+
+        async function openRepairGallery(category) {
+            currentGalleryCategory = category;
+            galleryTitle.textContent = category;
+            galleryContent.setAttribute("aria-busy", "true");
+            galleryContent.textContent = "Cargando trabajos...";
+            repairsDialog.showModal();
+
+            const articles = await loadRepairCatalog();
+            const categoryKey = normalizeText(category);
+            const categoryArticles = articles.filter((article) => normalizeText(article.category) === categoryKey);
+            if (categoryArticles.length) {
+                galleryContent.replaceChildren(...categoryArticles.map(createRepairCard));
+            } else {
+                showGalleryEmptyState(category);
+            }
+            galleryContent.removeAttribute("aria-busy");
+        }
+
+        window.addEventListener("storage", (event) => {
+            if (event.key !== "monica-nails-updated") return;
+            repairCatalogPromise = undefined;
+            if (repairsDialog.open && currentGalleryCategory) openRepairGallery(currentGalleryCategory);
+        });
+
+        function setDeviceMenuOpen(isOpen) {
+            deviceMenu.hidden = !isOpen;
+            deviceMenuBackdrop.hidden = !isOpen;
+            deviceMenuToggle.setAttribute("aria-expanded", String(isOpen));
+            deviceMenuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú de tratamientos" : "Abrir menú de tratamientos");
+        }
+
+        deviceMenuToggle.addEventListener("click", () => {
+            setDeviceMenuOpen(deviceMenuToggle.getAttribute("aria-expanded") !== "true");
+        });
+        deviceMenuBackdrop.addEventListener("click", () => setDeviceMenuOpen(false));
+        deviceMenuClose.addEventListener("click", () => setDeviceMenuOpen(false));
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && deviceMenuToggle.getAttribute("aria-expanded") === "true") {
+                setDeviceMenuOpen(false);
+                deviceMenuToggle.focus();
+            }
+        });
+
+        document.querySelectorAll(".device-option[data-gallery-category]").forEach((option) => {
+            option.addEventListener("click", () => {
+                if (window.matchMedia("(max-width: 760px)").matches) {
+                    setDeviceMenuOpen(false);
+                }
+                openRepairGallery(option.dataset.galleryCategory);
+            });
+        });
+        document.querySelector(".device-support-option").addEventListener("click", () => {
+            setDeviceMenuOpen(false);
+            creatorDialog.showModal();
+        });
+        closeGallery.addEventListener("click", () => repairsDialog.close());
+        repairsDialog.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") repairsDialog.close();
+        });
+        repairsDialog.addEventListener("click", (event) => {
+            if (event.target === repairsDialog) repairsDialog.close();
+        });
+
+        const serviceGalleryTrack = document.querySelector(".service-gallery-track");
+        const serviceGalleryControls = [...document.querySelectorAll(".service-gallery-control")];
+        const serviceGallery = document.querySelector(".service-gallery");
+        const originalSlides = [...serviceGalleryTrack.children];
+        const cloneSlides = (slides) => slides.map((slide) => {
+            const clone = slide.cloneNode(true);
+            clone.setAttribute("aria-hidden", "true");
+            clone.querySelectorAll("a, button, [tabindex]").forEach((element) => element.setAttribute("tabindex", "-1"));
+            return clone;
+        });
+        const leadingClones = cloneSlides(originalSlides);
+        serviceGalleryTrack.prepend(...leadingClones);
+        serviceGalleryTrack.append(...cloneSlides(originalSlides));
+        let galleryLoopWidth = 0;
+
+        function updateServiceGalleryControls() {
+            serviceGalleryControls.forEach((control) => {
+                control.disabled = originalSlides.length < 2;
+            });
+        }
+
+        function measureGalleryLoop() {
+            if (!originalSlides.length) return;
+            const originalStart = originalSlides[0].getBoundingClientRect().left;
+            const leadingStart = leadingClones[0].getBoundingClientRect().left;
+            galleryLoopWidth = originalStart - leadingStart;
+            if (galleryLoopWidth > 0 && serviceGalleryTrack.scrollLeft < galleryLoopWidth / 2) {
+                serviceGalleryTrack.scrollLeft = galleryLoopWidth;
+            }
+        }
+
+        serviceGalleryControls.forEach((control) => {
+            control.addEventListener("click", () => {
+                const firstSlide = serviceGalleryTrack.querySelector(".service-gallery-slide");
+                const slideGap = Number.parseFloat(getComputedStyle(serviceGalleryTrack).columnGap) || 0;
+                const distance = firstSlide.getBoundingClientRect().width + slideGap;
+                autoPauseUntil = performance.now() + 1200;
+                serviceGalleryTrack.scrollBy({
+                    left: distance * Number(control.dataset.galleryDirection),
+                    behavior: "smooth"
+                });
+            });
+        });
+        window.addEventListener("resize", measureGalleryLoop);
+        serviceGalleryTrack.querySelectorAll("img").forEach((image) => {
+            image.addEventListener("error", () => {
+                if (image.dataset.fallback !== "shown") {
+                    image.dataset.fallback = "shown";
+                    image.src = placeholderImage;
+                    image.alt = "Flyer de servicios Mónica Nails";
+                } else {
+                    image.closest(".service-gallery-slide").hidden = true;
+                    updateServiceGalleryControls();
+                }
+            });
+        });
+
+        let autoPauseUntil = 0;
+        let lastAutoFrame = 0;
+        const autoScrollSpeed = 28;
+        const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        function autoScrollGallery(timestamp) {
+            if (!lastAutoFrame) lastAutoFrame = timestamp;
+            const elapsed = Math.min(timestamp - lastAutoFrame, 50);
+            lastAutoFrame = timestamp;
+
+            const isVisible = serviceGallery.getClientRects().length > 0
+                && serviceGallery.getBoundingClientRect().bottom > 0
+                && serviceGallery.getBoundingClientRect().top < window.innerHeight;
+            const pointerIsOverGallery = serviceGallery.matches(":hover");
+            const galleryHasFocus = serviceGallery.contains(document.activeElement);
+            if (!pointerIsOverGallery && !galleryHasFocus && timestamp >= autoPauseUntil && isVisible && !document.hidden && !reducedMotionQuery.matches && galleryLoopWidth > 0) {
+                serviceGalleryTrack.scrollLeft += autoScrollSpeed * elapsed / 1000;
+                if (serviceGalleryTrack.scrollLeft >= galleryLoopWidth * 2) {
+                    serviceGalleryTrack.scrollLeft -= galleryLoopWidth;
+                } else if (serviceGalleryTrack.scrollLeft < 1) {
+                    serviceGalleryTrack.scrollLeft += galleryLoopWidth;
+                }
+            }
+            requestAnimationFrame(autoScrollGallery);
+        }
+
+        serviceGallery.addEventListener("pointerdown", () => {
+            autoPauseUntil = performance.now() + 1600;
+        });
+        serviceGallery.addEventListener("pointerup", () => {
+            autoPauseUntil = performance.now() + 1600;
+        });
+        serviceGallery.addEventListener("pointercancel", () => { autoPauseUntil = performance.now(); });
+        document.addEventListener("visibilitychange", () => { lastAutoFrame = 0; });
+        updateServiceGalleryControls();
+        measureGalleryLoop();
+        requestAnimationFrame(autoScrollGallery);
+
+        const mobileTabs = [...document.querySelectorAll(".mobile-tab")];
+
+        function selectMobileView(view) {
+            document.body.dataset.mobileView = view;
+            mobileTabs.forEach((tab) => {
+                const selected = tab.dataset.view === view;
+                tab.setAttribute("aria-selected", String(selected));
+                tab.tabIndex = selected ? 0 : -1;
+            });
+            if (view === "servicios") requestAnimationFrame(measureGalleryLoop);
+        }
+
+        mobileTabs.forEach((tab, index) => {
+            tab.addEventListener("click", () => selectMobileView(tab.dataset.view));
+            tab.addEventListener("keydown", (event) => {
+                if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+                event.preventDefault();
+                const direction = event.key === "ArrowRight" ? 1 : -1;
+                const nextTab = mobileTabs[(index + direction + mobileTabs.length) % mobileTabs.length];
+                selectMobileView(nextTab.dataset.view);
+                nextTab.focus();
+            });
+        });
+
+        document.querySelectorAll('a[href="#inicio"], a[href="#servicios"], a[href="#contacto"]').forEach((link) => {
+            link.addEventListener("click", (event) => {
+                if (window.matchMedia("(max-width: 760px)").matches) {
+                    event.preventDefault();
+                    const view = link.hash.slice(1);
+                    selectMobileView(view === "inicio" ? "inicio" : view);
+                }
+            });
+        });
+
+        window.setTimeout(() => {
+            showContactPrompt();
+            window.setInterval(showContactPrompt, promptRepeatDelay);
+        }, initialPromptDelay);
+    </script>
+</body>
+</html>

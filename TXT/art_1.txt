@@ -1,0 +1,7 @@
+Título: titulo general
+
+Categoría: Kapping Gel, Semipermanente, JellyTips, Rubber
+
+Imagen: ./FLASH.jpg
+
+Descripción: descripcion de el tratamiento
